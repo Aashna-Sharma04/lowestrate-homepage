@@ -1,0 +1,39 @@
+:root {
+    --lr-dark: #232f3e;
+    --lr-gold: #febd69;
+    --lr-accent: #37475a;
+    --lr-bg: #f3f3f3;
+}
+
+body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background: var(--lr-bg); color: #333; }
+
+/* Clean Header */
+header { background: var(--lr-dark); color: white; padding: 1rem 5%; }
+.top-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.logo { font-size: 1.6rem; font-weight: bold; }
+.main-menu ul { display: flex; list-style: none; gap: 15px; padding: 0; font-size: 0.85rem; }
+
+/* Layout Grid */
+.shop-content { display: flex; padding: 20px 5%; gap: 30px; }
+.sidebar { width: 250px; background: white; padding: 15px; border-radius: 5px; height: fit-content; }
+.sidebar ul { list-style: none; padding: 0; line-height: 2; font-size: 0.9rem; }
+
+/* Product Display */
+.product-area { flex: 1; }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; }
+.card { background: white; border: 1px solid #ddd; padding: 15px; text-align: center; border-radius: 4px; }
+.card h3 { font-size: 0.9rem; height: 3rem; margin-bottom: 10px; }
+.card button { background: var(--lr-gold); border: 1px solid #a88734; border-radius: 3px; cursor: pointer; padding: 5px 15px; }
+
+/* Contact Strip */
+.contact-strip { background: white; padding: 20px 5%; text-align: center; border-top: 2px solid var(--lr-gold); }
+.whatsapp-cta a { color: #25d366; font-weight: bold; text-decoration: none; }
+
+/* Footer */
+footer { background: var(--lr-dark); color: white; margin-top: 40px; }
+.back-to-top { background: var(--lr-accent); text-align: center; padding: 12px; }
+.back-to-top a { color: white; text-decoration: none; }
+.footer-columns { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 40px 5%; }
+.footer-columns h4 { margin-bottom: 15px; }
+.footer-columns ul { list-style: none; padding: 0; color: #ccc; font-size: 0.85rem; }
+.legal-footer { text-align: center; padding: 20px; font-size: 0.75rem; border-top: 1px solid #444; }
